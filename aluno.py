@@ -1,7 +1,7 @@
 class Aluno:
 
-    def __init__(self, matricula, nome, idade, curso) -> None:
+    def __init__(self, matricula, nomes, idade, curso) -> None:
         self.matricula = matricula
-        self.nome = nome
+        self.nome = nomes
         self.idade = idade
         self.curso = curso
