@@ -1,0 +1,27 @@
+{% extends 'admin.html' %}
+{% block titulo %}Listagem de Alunos{% endblock %}
+{%block conteudo%}        
+            <h1 class="titulo_pagina">Listagem de Alunos</h1>
+            <a class="btn btn-info" href="cadaluno.html">+ Novo</a>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Matrícula</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Curso</th>
+                        <th scope="col">Idade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for aluno in alunos %}
+                    <tr>
+                        <th scope="row">{{aluno.matricula}}</th>
+                        <td>{{aluno.nome}}</td>
+                        <td>{{aluno.curso}}</td>
+                        <td>{{aluno.idade}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+{%endblock%}
+
