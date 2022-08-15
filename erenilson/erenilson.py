@@ -1,2 +1,4 @@
 class Erenilson:
-    pass
+    
+    def __init__():
+        pass
